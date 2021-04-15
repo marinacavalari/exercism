@@ -14,5 +14,3 @@
         hours-to-add (/ (+ new-minutes) 60)]
     {:hours (int (Math/floor (mod (+ hours-to-add hours) 24)))
      :minutes (mod new-minutes 60)}))
-
-(clock 3 45)
